@@ -117,10 +117,24 @@ jQuery(document).ready(function(){
         }); 
 	});
 	
-	/*Slider contact page*/
+	/*Slider1 contact page*/
 	$(window).ready(function(){
-	  $(".button").click(function(){
-		$(".slider").animate({left: '250px'});
+	  $(".button1").click(function(){
+		$(".slider1").animate({left: '250px'});
+	  });
+	});
+	
+	/*Slider2 contact page*/
+	$(window).ready(function(){
+	  $(".button2").click(function(){
+		$(".slider2").animate({left: '250px'});
+	  });
+	});
+	
+	/*Slider3 contact page*/
+	$(window).ready(function(){
+	  $(".button3").click(function(){
+		$(".slider3").animate({left: '250px'});
 	  });
 	});
 
