@@ -143,7 +143,7 @@ header nav ul li a:hover
 	color: white;
 	font-weight: bold;
 	padding-top: -20px;
-	padding-bottom: 200px;
+	padding-bottom: 50px;
 }
 
 .container h2
@@ -452,6 +452,8 @@ header nav ul li a:hover
 	background-color: #080808;
 	margin: 150px 30px 30px;
 	padding: 70px 25px 40px;
+	height: auto;
+	max-width:auto;
 }
 
 .contact-block .contact-icon
@@ -477,12 +479,58 @@ header nav ul li a:hover
 
 .contact-photo
 {
-	position: relative;
-	margin: 150px 30px 30px;
-	text-align: center;
+  width: 250px; /* Set a specific width */
+  height: 250px; /* Set an equal height */
+  aspect-ratio: 1; /* Enforce a 1:1 aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without stretching */
+  border-radius: 50%; /* This creates the circular shape */
 }
 
+.contact-info-div
+{
+	display:inline-block;
+	width:70%;
+	max-width:100%;
+}
 
+.contact-button-div
+{
+	position:relative;
+	height:150px;
+}
 
+.contact-slider .slider1, .slider2, .slider3
+{
+	background-color:#080808;
+	height:100px;
+	width:250px;
+	position:absolute;
+}
 
+.slider-button-div
+{
+	background-color:#080808;
+	height:100px;
+	width:250px;
+	position:absolute;
+}
 
+.slider-button .button1, .button2, .button3
+{
+	position:absolute;
+	margin-left:90px;
+	margin-top:20px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.contact-info-position
+{
+	text-align:center;
+	padding-top:40px;
+}
+
+.contact-photo-div{
+	display:inline-block;
+	vertical-align:top;
+}
